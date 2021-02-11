@@ -71,8 +71,14 @@ function date(){
 
 
 const showDate = document.getElementById('txt');
-showDate.innerHTML = "<h2>" "Current Time:" + h + ":" + m +":" + s +": " + mm+ ":"+ "</h2>";
+showDate.innerHTML = "<h2>" +"Current Time:" + h + ":" + m +":" + s +": " + mm + "</h2>";
 const u = setTimeout('date()', 0);
 }
 
+function zeroPad(number){
+    if (number < 10){
+        number = "0"+number;
+    }
+    return number;
+}
 
